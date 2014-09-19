@@ -3,7 +3,7 @@
 ** Lua stand-alone interpreter
 ** See Copyright Notice in lua.h
 */
-#if 0
+#if 1
 
 #include <signal.h>
 #include <stdio.h>
