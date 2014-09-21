@@ -55,6 +55,7 @@ static TString *newlstr (lua_State *L, const char *str, size_t l,
   size_t totalsize;  /* total size of TString object */
   GCObject **list;  /* (pointer to) list where it will be inserted */
   TString *ts;
+  //取出str table，所有String都通过它来做gc
   stringtable *tb = &G(L)->strt;
   if (l+1 > (MAX_SIZET - sizeof(TString))/sizeof(char))
     luaM_toobig(L);
